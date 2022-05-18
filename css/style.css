@@ -219,63 +219,94 @@ body {
     align-items: center;
   }
 }
-.info-texto .info-uno,
-.info-texto .info-dos,
-.info-texto .info-tres {
+
+.info-uno,
+.info-dos,
+.info-tres {
   margin: 100px 50px;
   padding: 50px;
   text-align: center;
 }
-.info-texto .info-uno:hover,
-.info-texto .info-dos:hover,
-.info-texto .info-tres:hover {
+.info-uno:hover,
+.info-dos:hover,
+.info-tres:hover {
   background-color: rgba(4, 4, 3, 0.3725490196);
-  color: azure;
   font-weight: bolder;
 }
-.info-texto .info-uno:hover .encabezado-uno,
-.info-texto .info-uno:hover .encabezado-dos,
-.info-texto .info-uno:hover .encabezado-tres,
-.info-texto .info-dos:hover .encabezado-uno,
-.info-texto .info-dos:hover .encabezado-dos,
-.info-texto .info-dos:hover .encabezado-tres,
-.info-texto .info-tres:hover .encabezado-uno,
-.info-texto .info-tres:hover .encabezado-dos,
-.info-texto .info-tres:hover .encabezado-tres {
+.info-uno:hover .encabezado-uno,
+.info-uno:hover .encabezado-dos,
+.info-uno:hover .encabezado-tres,
+.info-dos:hover .encabezado-uno,
+.info-dos:hover .encabezado-dos,
+.info-dos:hover .encabezado-tres,
+.info-tres:hover .encabezado-uno,
+.info-tres:hover .encabezado-dos,
+.info-tres:hover .encabezado-tres {
   color: #E8EAE6;
   font-size: 35px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
-.info-texto .info-uno:hover .encabezado-uno .parrafo-uno,
-.info-texto .info-uno:hover .encabezado-uno .parrafo-dos,
-.info-texto .info-uno:hover .encabezado-uno .parrafo-tres,
-.info-texto .info-uno:hover .encabezado-dos .parrafo-uno,
-.info-texto .info-uno:hover .encabezado-dos .parrafo-dos,
-.info-texto .info-uno:hover .encabezado-dos .parrafo-tres,
-.info-texto .info-uno:hover .encabezado-tres .parrafo-uno,
-.info-texto .info-uno:hover .encabezado-tres .parrafo-dos,
-.info-texto .info-uno:hover .encabezado-tres .parrafo-tres,
-.info-texto .info-dos:hover .encabezado-uno .parrafo-uno,
-.info-texto .info-dos:hover .encabezado-uno .parrafo-dos,
-.info-texto .info-dos:hover .encabezado-uno .parrafo-tres,
-.info-texto .info-dos:hover .encabezado-dos .parrafo-uno,
-.info-texto .info-dos:hover .encabezado-dos .parrafo-dos,
-.info-texto .info-dos:hover .encabezado-dos .parrafo-tres,
-.info-texto .info-dos:hover .encabezado-tres .parrafo-uno,
-.info-texto .info-dos:hover .encabezado-tres .parrafo-dos,
-.info-texto .info-dos:hover .encabezado-tres .parrafo-tres,
-.info-texto .info-tres:hover .encabezado-uno .parrafo-uno,
-.info-texto .info-tres:hover .encabezado-uno .parrafo-dos,
-.info-texto .info-tres:hover .encabezado-uno .parrafo-tres,
-.info-texto .info-tres:hover .encabezado-dos .parrafo-uno,
-.info-texto .info-tres:hover .encabezado-dos .parrafo-dos,
-.info-texto .info-tres:hover .encabezado-dos .parrafo-tres,
-.info-texto .info-tres:hover .encabezado-tres .parrafo-uno,
-.info-texto .info-tres:hover .encabezado-tres .parrafo-dos,
-.info-texto .info-tres:hover .encabezado-tres .parrafo-tres {
+.info-uno:hover .encabezado-uno .parrafo-uno,
+.info-uno:hover .encabezado-uno .parrafo-dos,
+.info-uno:hover .encabezado-uno .parrafo-tres,
+.info-uno:hover .encabezado-dos .parrafo-uno,
+.info-uno:hover .encabezado-dos .parrafo-dos,
+.info-uno:hover .encabezado-dos .parrafo-tres,
+.info-uno:hover .encabezado-tres .parrafo-uno,
+.info-uno:hover .encabezado-tres .parrafo-dos,
+.info-uno:hover .encabezado-tres .parrafo-tres,
+.info-dos:hover .encabezado-uno .parrafo-uno,
+.info-dos:hover .encabezado-uno .parrafo-dos,
+.info-dos:hover .encabezado-uno .parrafo-tres,
+.info-dos:hover .encabezado-dos .parrafo-uno,
+.info-dos:hover .encabezado-dos .parrafo-dos,
+.info-dos:hover .encabezado-dos .parrafo-tres,
+.info-dos:hover .encabezado-tres .parrafo-uno,
+.info-dos:hover .encabezado-tres .parrafo-dos,
+.info-dos:hover .encabezado-tres .parrafo-tres,
+.info-tres:hover .encabezado-uno .parrafo-uno,
+.info-tres:hover .encabezado-uno .parrafo-dos,
+.info-tres:hover .encabezado-uno .parrafo-tres,
+.info-tres:hover .encabezado-dos .parrafo-uno,
+.info-tres:hover .encabezado-dos .parrafo-dos,
+.info-tres:hover .encabezado-dos .parrafo-tres,
+.info-tres:hover .encabezado-tres .parrafo-uno,
+.info-tres:hover .encabezado-tres .parrafo-dos,
+.info-tres:hover .encabezado-tres .parrafo-tres {
   font-weight: 600;
+  color: #f0ece8;
+  font-size: 2.5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #040403;
+  margin-top: 50px;
+  padding: 20px 20px;
+  color: #E8EAE6;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    color: rgb(243, 214, 214);
+    margin-top: 50px;
+    padding: 20px 20px;
+  }
+}
+.footer-container .info-redes a {
+  text-decoration: none;
+  list-style: none;
   color: #a9896f;
+  font-size: 20px;
+}
+.footer-container .info-redes a:hover {
+  color: rgba(240, 255, 255, 0.75);
 }
 
 /*# sourceMappingURL=style.css.map */

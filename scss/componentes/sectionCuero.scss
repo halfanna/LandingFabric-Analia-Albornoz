@@ -9,10 +9,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     @media only screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;
-        }
+    }
+}
     .info-uno,
     .info-dos,
     .info-tres {
@@ -22,13 +24,12 @@
 
         &:hover {
             background-color: #0404035f;
-            color: azure;
             font-weight: bolder;
+
 
             .encabezado-uno,
             .encabezado-dos,
             .encabezado-tres {
-
                 color: #E8EAE6;
                 font-size: 35px;
                 font-weight: 500;
@@ -38,7 +39,8 @@
                 .parrafo-dos,
                 .parrafo-tres {
                     font-weight: 600;
-                    color: #a9896f;
+                    color: #f0ece8;
+                    font-size: 2.5rem;
 
                 }
 
@@ -46,4 +48,3 @@
         }
 
     }
-}
