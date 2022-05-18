@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,300;1,300&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,300;1,300&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.principal-cartel .titulo-cartel {
+  font-size: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  animation-name: titulo;
+  animation-duration: 30s;
+}
+@keyframes titulo {
+  0% {
+    color: #EE5007;
+  }
+  25% {
+    color: #F900BF;
+    left: 200px;
+  }
+  50% {
+    color: #FFE400;
+  }
+  75% {
+    color: #1CC5DC;
+  }
+  100% {
+    color: #93329E;
+  }
+}
+
+.header {
+  color: black;
+  font-weight: bolder;
+}
+.header .titulo-marca {
+  font-size: 4rem;
+}
+.header .titulo-marca .nav-link a {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #F900BF;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesoriosdemoda1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-img .texto-hero {
+  padding: 150px;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  color: aliceblue;
+}
+.hero-img .texto-hero .titulo-nosotros {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.subtitulo-nosotros {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.subtitulo-nosotros .submit-style {
+  color: rgba(6, 7, 6, 0.7019607843);
+  background-color: rgb(166, 137, 137);
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 10px 5px;
+  width: 100px;
+}
+.subtitulo-nosotros .submit-style:hover {
+  color: antiquewhite;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+@media screen and (max-width: 600px) {
+  .subtitulo-nosotros .submit-style:hover {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mayoristas-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+@media screen and (max-width: 750px) {
+  .mayoristas-section {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+    -webkit-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+    -moz-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+  }
+}
+.mayoristas-section .card-uno,
+.mayoristas-section .card-dos,
+.mayoristas-section .card-tres {
+  width: 350px;
+  height: 300px;
+  color: grey;
+  margin: 50px;
+  padding: 50px;
+  text-align: left;
+  box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.mayoristas-section .card-uno:hover,
+.mayoristas-section .card-dos:hover,
+.mayoristas-section .card-tres:hover {
+  box-shadow: -8px 14px 10px 0px rgba(84, 64, 64, 0.75);
+  -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
+  -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
+}
+.mayoristas-section .card-uno .titulo-card,
+.mayoristas-section .card-dos .titulo-card,
+.mayoristas-section .card-tres .titulo-card {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.mayoristas-section .card-uno .titulo-card .p-card,
+.mayoristas-section .card-dos .titulo-card .p-card,
+.mayoristas-section .card-tres .titulo-card .p-card {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  gap: 35px;
+}
+@media only screen and (max-width: 600px) {
+  .galeria-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.galeria-container .item-uno {
+  grid-column-start: span 3;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria-item img .parrafo-item {
+  font-size: 2.5 rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.item-uno {
+  position: relative;
+}
+.item-uno .titulo-item-uno {
+  background-color: rgba(247, 205, 172, 0.504);
+  color: #0b0606;
+  position: absolute;
+  bottom: 35px;
+  margin-left: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.item-uno .titulo-item-uno:hover {
+  background-color: #0b0606;
+  color: #E8EAE6;
+}
+
+.info-texto {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: left;
+  padding: 30px;
+  margin-top: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesorios213.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 600px) {
+  .info-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.info-texto .info-uno,
+.info-texto .info-dos,
+.info-texto .info-tres {
+  margin: 100px 50px;
+  padding: 50px;
+  text-align: center;
+}
+.info-texto .info-uno:hover,
+.info-texto .info-dos:hover,
+.info-texto .info-tres:hover {
+  background-color: rgba(4, 4, 3, 0.3725490196);
+  color: azure;
+  font-weight: bolder;
+}
+.info-texto .info-uno:hover .encabezado-uno,
+.info-texto .info-uno:hover .encabezado-dos,
+.info-texto .info-uno:hover .encabezado-tres,
+.info-texto .info-dos:hover .encabezado-uno,
+.info-texto .info-dos:hover .encabezado-dos,
+.info-texto .info-dos:hover .encabezado-tres,
+.info-texto .info-tres:hover .encabezado-uno,
+.info-texto .info-tres:hover .encabezado-dos,
+.info-texto .info-tres:hover .encabezado-tres {
+  color: #E8EAE6;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.info-texto .info-uno:hover .encabezado-uno .parrafo-uno,
+.info-texto .info-uno:hover .encabezado-uno .parrafo-dos,
+.info-texto .info-uno:hover .encabezado-uno .parrafo-tres,
+.info-texto .info-uno:hover .encabezado-dos .parrafo-uno,
+.info-texto .info-uno:hover .encabezado-dos .parrafo-dos,
+.info-texto .info-uno:hover .encabezado-dos .parrafo-tres,
+.info-texto .info-uno:hover .encabezado-tres .parrafo-uno,
+.info-texto .info-uno:hover .encabezado-tres .parrafo-dos,
+.info-texto .info-uno:hover .encabezado-tres .parrafo-tres,
+.info-texto .info-dos:hover .encabezado-uno .parrafo-uno,
+.info-texto .info-dos:hover .encabezado-uno .parrafo-dos,
+.info-texto .info-dos:hover .encabezado-uno .parrafo-tres,
+.info-texto .info-dos:hover .encabezado-dos .parrafo-uno,
+.info-texto .info-dos:hover .encabezado-dos .parrafo-dos,
+.info-texto .info-dos:hover .encabezado-dos .parrafo-tres,
+.info-texto .info-dos:hover .encabezado-tres .parrafo-uno,
+.info-texto .info-dos:hover .encabezado-tres .parrafo-dos,
+.info-texto .info-dos:hover .encabezado-tres .parrafo-tres,
+.info-texto .info-tres:hover .encabezado-uno .parrafo-uno,
+.info-texto .info-tres:hover .encabezado-uno .parrafo-dos,
+.info-texto .info-tres:hover .encabezado-uno .parrafo-tres,
+.info-texto .info-tres:hover .encabezado-dos .parrafo-uno,
+.info-texto .info-tres:hover .encabezado-dos .parrafo-dos,
+.info-texto .info-tres:hover .encabezado-dos .parrafo-tres,
+.info-texto .info-tres:hover .encabezado-tres .parrafo-uno,
+.info-texto .info-tres:hover .encabezado-tres .parrafo-dos,
+.info-texto .info-tres:hover .encabezado-tres .parrafo-tres {
+  font-weight: 600;
+  color: #a9896f;
+}
+
+/*# sourceMappingURL=style.css.map */

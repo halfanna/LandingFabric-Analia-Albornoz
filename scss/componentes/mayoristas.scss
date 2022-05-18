@@ -1,0 +1,50 @@
+.mayoristas-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    @media screen and (max-width:750px) {
+
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+        -webkit-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+        -moz-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
+
+    }
+
+    .card-uno,
+    .card-dos,
+    .card-tres {
+        width: 350px;
+        height: 300px;
+        color: grey;
+        margin: 50px;
+        padding: 50px;
+        text-align: left;
+        box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
+
+        &:hover {
+            box-shadow: -8px 14px 10px 0px rgba(84, 64, 64, 0.75);
+            -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
+            -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
+        }
+
+        .titulo-card {
+            color: black;
+            font-size: 2.5rem;
+            font-weight: bolder;
+
+            .p-card {
+                color: black;
+                font-size: 2.5rem;
+                font-weight: bolder;
+
+            }
+        }
+    }
+}

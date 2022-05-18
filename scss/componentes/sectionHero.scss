@@ -1,0 +1,57 @@
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesoriosdemoda1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .texto-hero {
+        padding: 150px;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        color: aliceblue;
+
+        .titulo-nosotros {
+            font-size: 3rem;
+            font-weight: bolder;
+
+
+        }
+    }
+}
+
+.subtitulo-nosotros {
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+    .submit-style {
+        color: #060706b3;
+        background-color: rgb(166, 137, 137);
+        font-weight: 900;
+        border-radius: 5px;
+        padding: 10px 5px;
+        width: 100px;
+
+        &:hover {
+            color: antiquewhite;
+            font-weight: bolder;
+            background-color: rgba(0, 0, 0, 0.26);
+
+            @media screen and (max-width: 600px) {
+
+                flex-direction: column;
+                align-items: center;
+
+
+            }
+        }
+
+    }
+}
+
+
+
+

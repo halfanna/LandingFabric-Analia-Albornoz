@@ -1,0 +1,49 @@
+.info-texto {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: left;
+    padding: 30px;
+    margin-top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesorios213.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        }
+    .info-uno,
+    .info-dos,
+    .info-tres {
+        margin: 100px 50px;
+        padding: 50px;
+        text-align: center;
+
+        &:hover {
+            background-color: #0404035f;
+            color: azure;
+            font-weight: bolder;
+
+            .encabezado-uno,
+            .encabezado-dos,
+            .encabezado-tres {
+
+                color: #E8EAE6;
+                font-size: 35px;
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+
+                .parrafo-uno,
+                .parrafo-dos,
+                .parrafo-tres {
+                    font-weight: 600;
+                    color: #a9896f;
+
+                }
+
+            }
+        }
+
+    }
+}
