@@ -1,7 +1,8 @@
 GIT PULL (TRAE TODOS LOS CAMBIOS DEL REPOSITORIO)
 
 
-
+init
+sass --watch scss/style.scss css/style.css
 
 seoooo
 

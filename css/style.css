@@ -70,12 +70,11 @@ body {
 .nav-link:hover{
     color: #93329E;
 }
-
+/* hero imagen */
 .hero-img {
      display: flex;
     justify-content: center;
-      /* align-items: center; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(imagenes/accesoriosdemoda1.webp);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(imagenes/accesoriosdemoda1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -132,7 +131,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    /* text align left */
+   
 }
 
 .card-uno,
@@ -255,19 +254,7 @@ body {
 
 }
 
-/* .info-uno {
-    background-color: #12100f48;
-    border-radius: 20px;
-}
 
-.info-dos {
-    background-color: #9561616a;
-   
-}
-.info-tres{
-    background-color: #12100f48;
-    border-radius: 20px;
-} */
 
 .info-uno:hover{
     background-color: #0b060691;
