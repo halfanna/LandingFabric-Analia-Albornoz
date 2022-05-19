@@ -1,5 +1,4 @@
 .galeria-container{
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 350px;
@@ -43,9 +42,15 @@
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: bolder;
+        @media only screen and (max-width: 600px) {
+            font-size: 2.5rem;
+        }
+
         &:hover{
             background-color:#0b0606;
-            color: #E8EAE6;
+            color: #E8EAE6;  
+           
+
         }
     }
 }

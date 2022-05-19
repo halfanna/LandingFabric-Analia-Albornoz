@@ -2,21 +2,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesoriosdemoda1.webp);
+    background-image: url(../imagenes/accesoriosdemoda1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width: 600px) {
+
+        flex-direction: column;
+        align-items: center;
+
+
+    }
 
     .texto-hero {
+        background-color: rgba(0, 0, 0, 0.284);
+        letter-spacing: 5px;
         padding: 150px;
         text-align: left;
         font-size: 2rem;
         font-weight: 700;
-        color: aliceblue;
+        color: #F0ECE3;
+        @media screen and (max-width: 600px) {
+            font-size: 1.5rem;
+    
+    
+        }
 
         .titulo-nosotros {
             font-size: 3rem;
             font-weight: bolder;
+            color: #FDF6EC;
+           
 
 
         }
@@ -24,34 +40,26 @@
 }
 
 .subtitulo-nosotros {
+    letter-spacing: 5px;
+    color: #FDF6EC;
     font-size: 2.5rem;
     font-weight: bolder;
 
     .submit-style {
         color: #060706b3;
         background-color: rgb(166, 137, 137);
-        font-weight: 900;
+        font-weight: bolder;
         border-radius: 5px;
         padding: 10px 5px;
-        width: 100px;
+        width: 300px;
 
         &:hover {
             color: antiquewhite;
             font-weight: bolder;
             background-color: rgba(0, 0, 0, 0.26);
 
-            @media screen and (max-width: 600px) {
-
-                flex-direction: column;
-                align-items: center;
-
-
-            }
+           
         }
 
     }
 }
-
-
-
-

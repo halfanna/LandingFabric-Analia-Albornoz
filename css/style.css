@@ -27,12 +27,21 @@ html {
 }
 
 .principal-cartel .titulo-cartel {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  letter-spacing: 5px;
   background-color: rgb(0, 0, 0);
   color: #D0C9C0;
   text-align: center;
   animation-name: titulo;
   animation-duration: 30s;
+}
+@media screen and (max-width: 600px) {
+  .principal-cartel .titulo-cartel {
+    font-size: 1.5rem;
+    letter-spacing: none;
+    color: #9A0680;
+    font-weight: bolder;
+  }
 }
 @keyframes titulo {
   0% {
@@ -62,7 +71,7 @@ html {
 .nav-link {
   font-weight: 500;
   color: #0b0606;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .nav-link:hover {
   color: #A2B38B;
@@ -72,45 +81,55 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesoriosdemoda1.webp);
+  background-image: url(../imagenes/accesoriosdemoda1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 600px) {
+  .hero-img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .hero-img .texto-hero {
+  background-color: rgba(0, 0, 0, 0.284);
+  letter-spacing: 5px;
   padding: 150px;
   text-align: left;
   font-size: 2rem;
   font-weight: 700;
-  color: aliceblue;
+  color: #F0ECE3;
+}
+@media screen and (max-width: 600px) {
+  .hero-img .texto-hero {
+    font-size: 1.5rem;
+  }
 }
 .hero-img .texto-hero .titulo-nosotros {
   font-size: 3rem;
   font-weight: bolder;
+  color: #FDF6EC;
 }
 
 .subtitulo-nosotros {
+  letter-spacing: 5px;
+  color: #FDF6EC;
   font-size: 2.5rem;
   font-weight: bolder;
 }
 .subtitulo-nosotros .submit-style {
   color: rgba(6, 7, 6, 0.7019607843);
   background-color: rgb(166, 137, 137);
-  font-weight: 900;
+  font-weight: bolder;
   border-radius: 5px;
   padding: 10px 5px;
-  width: 100px;
+  width: 300px;
 }
 .subtitulo-nosotros .submit-style:hover {
   color: antiquewhite;
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0.26);
-}
-@media screen and (max-width: 600px) {
-  .subtitulo-nosotros .submit-style:hover {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .mayoristas-section {
@@ -152,15 +171,17 @@ html {
 .mayoristas-section .card-uno .titulo-card,
 .mayoristas-section .card-dos .titulo-card,
 .mayoristas-section .card-tres .titulo-card {
+  letter-spacing: 0.5rem;
   color: black;
   font-size: 2.5rem;
   font-weight: bolder;
 }
-.mayoristas-section .card-uno .titulo-card .p-card,
-.mayoristas-section .card-dos .titulo-card .p-card,
-.mayoristas-section .card-tres .titulo-card .p-card {
+.mayoristas-section .card-uno .titulo-card p,
+.mayoristas-section .card-dos .titulo-card p,
+.mayoristas-section .card-tres .titulo-card p {
+  letter-spacing: 0.5rem;
   color: black;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bolder;
 }
 
@@ -206,6 +227,11 @@ html {
   font-size: 4rem;
   font-weight: bolder;
 }
+@media only screen and (max-width: 600px) {
+  .item-uno .titulo-item-uno {
+    font-size: 2.5rem;
+  }
+}
 .item-uno .titulo-item-uno:hover {
   background-color: #0b0606;
   color: #E8EAE6;
@@ -218,7 +244,7 @@ html {
   text-align: left;
   padding: 30px;
   margin-top: 30px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesorios213.webp);
+  background-image: url(../imagenes/accesorios213.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -230,63 +256,22 @@ html {
   }
 }
 
-.info-uno,
-.info-dos,
-.info-tres {
+.info-uno {
   margin: 100px 50px;
   padding: 50px;
   text-align: center;
+  background-color: #0F0E0E;
 }
-.info-uno:hover,
-.info-dos:hover,
-.info-tres:hover {
-  background-color: rgba(4, 4, 3, 0.3725490196);
-  font-weight: bolder;
-}
-.info-uno:hover .encabezado-uno,
-.info-uno:hover .encabezado-dos,
-.info-uno:hover .encabezado-tres,
-.info-dos:hover .encabezado-uno,
-.info-dos:hover .encabezado-dos,
-.info-dos:hover .encabezado-tres,
-.info-tres:hover .encabezado-uno,
-.info-tres:hover .encabezado-dos,
-.info-tres:hover .encabezado-tres {
+.info-uno .encabezado-uno {
   color: #E8EAE6;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
-.info-uno:hover .encabezado-uno .parrafo-uno,
-.info-uno:hover .encabezado-uno .parrafo-dos,
-.info-uno:hover .encabezado-uno .parrafo-tres,
-.info-uno:hover .encabezado-dos .parrafo-uno,
-.info-uno:hover .encabezado-dos .parrafo-dos,
-.info-uno:hover .encabezado-dos .parrafo-tres,
-.info-uno:hover .encabezado-tres .parrafo-uno,
-.info-uno:hover .encabezado-tres .parrafo-dos,
-.info-uno:hover .encabezado-tres .parrafo-tres,
-.info-dos:hover .encabezado-uno .parrafo-uno,
-.info-dos:hover .encabezado-uno .parrafo-dos,
-.info-dos:hover .encabezado-uno .parrafo-tres,
-.info-dos:hover .encabezado-dos .parrafo-uno,
-.info-dos:hover .encabezado-dos .parrafo-dos,
-.info-dos:hover .encabezado-dos .parrafo-tres,
-.info-dos:hover .encabezado-tres .parrafo-uno,
-.info-dos:hover .encabezado-tres .parrafo-dos,
-.info-dos:hover .encabezado-tres .parrafo-tres,
-.info-tres:hover .encabezado-uno .parrafo-uno,
-.info-tres:hover .encabezado-uno .parrafo-dos,
-.info-tres:hover .encabezado-uno .parrafo-tres,
-.info-tres:hover .encabezado-dos .parrafo-uno,
-.info-tres:hover .encabezado-dos .parrafo-dos,
-.info-tres:hover .encabezado-dos .parrafo-tres,
-.info-tres:hover .encabezado-tres .parrafo-uno,
-.info-tres:hover .encabezado-tres .parrafo-dos,
-.info-tres:hover .encabezado-tres .parrafo-tres {
+.info-uno .encabezado-uno p {
   font-weight: 600;
-  color: #f0ece8;
-  font-size: 2.5rem;
+  color: #ECDBBA;
+  font-size: 3rem;
 }
 
 .footer-container {
@@ -317,6 +302,15 @@ html {
 }
 .footer-container .info-redes a:hover {
   color: rgba(240, 255, 255, 0.75);
+}
+.footer-container .info-redes a:hover .btn-chat img {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 33px;
+  right: 33px;
+  line-height: 55px;
+  z-index: 100;
 }
 
 /*# sourceMappingURL=style.css.map */

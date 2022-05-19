@@ -5,7 +5,7 @@
     text-align: left;
     padding: 30px;
     margin-top: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.299)), url(../imagenes/accesorios213.webp);
+    background-image: url(../imagenes/accesorios213.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,36 +15,25 @@
         align-items: center;
     }
 }
-    .info-uno,
-    .info-dos,
-    .info-tres {
+    .info-uno{
         margin: 100px 50px;
         padding: 50px;
         text-align: center;
-
-        &:hover {
-            background-color: #0404035f;
-            font-weight: bolder;
-
-
-            .encabezado-uno,
-            .encabezado-dos,
-            .encabezado-tres {
-                color: #E8EAE6;
-                font-size: 35px;
+        background-color: #0F0E0E;
+        .encabezado-uno{
+                 color: #E8EAE6;
+                font-size: 3.5rem;
                 font-weight: 500;
                 font-family: 'Poppins', sans-serif;
+            p{
+                font-weight: 600;
+                color: #ECDBBA;
+                font-size: 3rem;
 
-                .parrafo-uno,
-                .parrafo-dos,
-                .parrafo-tres {
-                    font-weight: 600;
-                    color: #f0ece8;
-                    font-size: 2.5rem;
-
-                }
 
             }
         }
-
     }
+
+    
+   
