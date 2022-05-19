@@ -17,8 +17,8 @@
     .card-uno,
     .card-dos,
     .card-tres {
-        width: 350px;
-        height: 300px;
+        width: 400px;
+        height: 350px;
         color: grey;
         margin: 50px;
         padding: 50px;
@@ -31,21 +31,29 @@
             box-shadow: -8px 14px 10px 0px rgba(84, 64, 64, 0.75);
             -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
             -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
+
+          
         }
 
-        .titulo-card {
-            letter-spacing: 0.5rem;
-            color: black;
-            font-size: 2.5rem;
-            font-weight: bolder;
-
-            p {
-                letter-spacing: 0.5rem;
-                color: black;
-                font-size: 3rem;
-                font-weight: bolder;
-
-            }
-        }
+       
     }
+}
+.card-uno,.card-dos,.card-tres {
+     .titulo-card {
+        text-align: center;
+        letter-spacing: 0.5rem;
+        color: black;
+        font-size: 2.5rem;
+        font-weight: bolder;
+
+      
+    }
+} 
+ .mayoristas {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color:black ;
+    font-size: 1.8rem;
+    font-weight: bolder;
+
 }

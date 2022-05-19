@@ -151,8 +151,8 @@ html {
 .mayoristas-section .card-uno,
 .mayoristas-section .card-dos,
 .mayoristas-section .card-tres {
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
   color: grey;
   margin: 50px;
   padding: 50px;
@@ -168,20 +168,20 @@ html {
   -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
   -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
 }
-.mayoristas-section .card-uno .titulo-card,
-.mayoristas-section .card-dos .titulo-card,
-.mayoristas-section .card-tres .titulo-card {
+
+.card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
+  text-align: center;
   letter-spacing: 0.5rem;
   color: black;
   font-size: 2.5rem;
   font-weight: bolder;
 }
-.mayoristas-section .card-uno .titulo-card p,
-.mayoristas-section .card-dos .titulo-card p,
-.mayoristas-section .card-tres .titulo-card p {
+
+.mayoristas {
+  text-align: center;
   letter-spacing: 0.5rem;
   color: black;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: bolder;
 }
 
@@ -256,22 +256,51 @@ html {
   }
 }
 
-.info-uno {
+.info-uno, .info-dos, .info-tres {
+  width: 450px;
+  height: 400px;
   margin: 100px 50px;
   padding: 50px;
   text-align: center;
-  background-color: #0F0E0E;
+  background-color: rgba(15, 14, 14, 0.7568627451);
 }
-.info-uno .encabezado-uno {
+@media only screen and (max-width: 600px) {
+  .info-uno, .info-dos, .info-tres {
+    background-color: rgba(232, 234, 230, 0.4117647059);
+    width: 350px;
+    height: 300px;
+  }
+}
+.info-uno:hover, .info-dos:hover, .info-tres:hover {
+  background-color: black;
+}
+
+.encabezado-cueros {
   color: #E8EAE6;
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
-.info-uno .encabezado-uno p {
-  font-weight: 600;
+@media only screen and (max-width: 600px) {
+  .encabezado-cueros {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+
+.parrafo-cueros {
+  text-align: center;
+  font-weight: 500;
   color: #ECDBBA;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .parrafo-cueros {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
 }
 
 .footer-container {
