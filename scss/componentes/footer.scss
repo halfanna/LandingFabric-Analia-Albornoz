@@ -8,7 +8,7 @@
     padding: 20px 20px;
     color: nth($colores, 6 );
     text-align: center;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 750px) {
         
         flex-direction: column;
         align-items: center;
@@ -41,4 +41,9 @@
         font-size: nth($font-size, 3 );
         font-weight: nth($font-weight, 3 );
     }
-    
+    .form-style{
+
+        .titulo-form{
+            font-size: nth($font-size, 3 );
+        }
+    }

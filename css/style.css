@@ -137,9 +137,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  text-align: left;
+  text-align: center;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
   .mayoristas-section {
     flex-direction: column;
     align-items: center;
@@ -151,7 +151,7 @@ html {
 .mayoristas-section .card-uno,
 .mayoristas-section .card-dos,
 .mayoristas-section .card-tres {
-  width: 400px;
+  width: 450px;
   height: 350px;
   margin: 50px;
   padding: 50px;
@@ -160,12 +160,12 @@ html {
   -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
   .mayoristas-section .card-uno,
 .mayoristas-section .card-dos,
 .mayoristas-section .card-tres {
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
   }
 }
 .mayoristas-section .card-uno:hover,
@@ -177,31 +177,17 @@ html {
 }
 
 .card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
-  text-align: left;
-  letter-spacing: 0.5rem;
+  text-align: center;
   color: #180A0A;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bolder;
-}
-@media screen and (max-width: 750px) {
-  .card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
-    font-size: 2rem;
-    letter-spacing: normal;
-  }
 }
 
 .mayoristas {
-  text-align: left;
-  letter-spacing: 0.5rem;
+  text-align: center;
   color: #CC9C75;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bolder;
-}
-@media screen and (max-width: 750px) {
-  .mayoristas {
-    font-size: 1.5rem;
-    letter-spacing: normal;
-  }
 }
 
 .galeria-container {
@@ -268,7 +254,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .info-texto {
     flex-direction: column;
     align-items: center;
@@ -283,15 +269,17 @@ html {
   text-align: center;
   background-color: rgba(15, 14, 14, 0.7568627451);
 }
-.info-uno:hover, .info-dos:hover, .info-tres:hover {
-  background-color: rgb(166, 137, 137);
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .info-uno, .info-dos, .info-tres {
     background-color: rgba(247, 205, 172, 0.504);
-    width: 300px;
-    height: 250px;
+    color: #0b0606;
+    width: 400px;
+    height: 350px;
   }
+}
+.info-uno:hover, .info-dos:hover, .info-tres:hover {
+  background-color: rgb(166, 137, 137);
+  color: #180A0A;
 }
 
 .encabezado-cueros {
@@ -300,11 +288,9 @@ html {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .encabezado-cueros {
     color: #0b0606;
-    font-size: 2rem;
-    font-weight: bolder;
   }
 }
 
@@ -314,15 +300,13 @@ html {
   color: #CC9C75;
   font-size: 2rem;
 }
-.parrafo-cueros:hover {
-  color: #180A0A;
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .parrafo-cueros {
     color: #0b0606;
-    font-size: 1.5rem;
-    font-weight: bolder;
   }
+}
+.parrafo-cueros:hover {
+  color: #180A0A;
 }
 
 .footer-container {
@@ -335,7 +319,7 @@ html {
   color: #E8EAE6;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -361,6 +345,10 @@ html {
 .titulo-local {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.form-style .titulo-form {
+  font-size: 2rem;
 }
 
 .hero-img {
