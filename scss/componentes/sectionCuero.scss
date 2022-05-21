@@ -38,7 +38,7 @@
         }
     &:hover{
         background-color: nth($bg-color, 2 );
-        color: nth($colores, 4 );
+        
     }
      
    
@@ -51,24 +51,23 @@
      font-weight: nth($font-weight, 3);
      font-family: 'Poppins', sans-serif;
      @media only screen and (max-width:780px) {
-      
-        color: nth($colores,1 );
+         color: nth($colores,1 );
        
         }
 }
 .parrafo-cueros{
+   
     text-align: center;
     font-weight: nth($font-weight, 2 );
-    color: nth($colores, 7 );
+    color: nth($colores, 3 );
     font-size: 2rem;
     @media only screen and (max-width:780px) {
         
         color: nth($colores,1 );
+        text-transform: uppercase;
        
         }
-    &:hover{
-        color: nth($colores, 4 );
-    }
+  
         
 
 }

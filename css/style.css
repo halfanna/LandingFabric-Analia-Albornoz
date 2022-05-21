@@ -279,7 +279,6 @@ html {
 }
 .info-uno:hover, .info-dos:hover, .info-tres:hover {
   background-color: rgb(166, 137, 137);
-  color: #180A0A;
 }
 
 .encabezado-cueros {
@@ -297,16 +296,14 @@ html {
 .parrafo-cueros {
   text-align: center;
   font-weight: 600;
-  color: #CC9C75;
+  color: #D0C9C0;
   font-size: 2rem;
 }
 @media only screen and (max-width: 780px) {
   .parrafo-cueros {
     color: #0b0606;
+    text-transform: uppercase;
   }
-}
-.parrafo-cueros:hover {
-  color: #180A0A;
 }
 
 .footer-container {
