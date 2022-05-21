@@ -1,7 +1,5 @@
 .hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     background-image: url(../imagenes/accesoriosdemoda1.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -15,23 +13,24 @@
     }
 
     .texto-hero {
-        background-color: rgba(0, 0, 0, 0.284);
-        letter-spacing: 5px;
+        background-color: nth($bg-color, 1);
+        letter-spacing: 0.5rem;
         padding: 150px;
         text-align: left;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #F0ECE3;
+        font-size: nth($font-size, 3 );
+        font-weight: nth($font-weight, 3 );
+        color: nth($colores, 9 );
         @media screen and (max-width: 600px) {
-            font-size: 1.5rem;
+            font-size: nth($font-size, 1 );
+            letter-spacing: normal;
     
     
         }
 
         .titulo-nosotros {
             font-size: 3rem;
-            font-weight: bolder;
-            color: #FDF6EC;
+            font-weight: nth($font-weight, 4 );
+            color:nth($colores, 9 ); 
            
 
 
@@ -40,26 +39,28 @@
 }
 
 .subtitulo-nosotros {
-    letter-spacing: 5px;
-    color: #FDF6EC;
-    font-size: 2.5rem;
-    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    color:nth($colores, 9 ); 
+    font-size: nth($font-size , 4 );
+    font-weight: nth($font-weight, 4 );
 
-    .submit-style {
-        color: #060706b3;
-        background-color: rgb(166, 137, 137);
-        font-weight: bolder;
-        border-radius: 5px;
-        padding: 10px 5px;
-        width: 300px;
+    
+}
+.submit-style {
+    color: nth($colores, 1 );
+    background-color: nth($bg-color, 8 );
+    font-weight: nth($font-weight, 4);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 5px;
+    width: 100px;
 
-        &:hover {
-            color: antiquewhite;
-            font-weight: bolder;
-            background-color: rgba(0, 0, 0, 0.26);
+    &:hover {
+        color:nth($colores, 9) ;
+        font-weight: nth($font-weight, 4);
+        background-color: nth($bg-color, 3 );
 
-           
-        }
-
+       
     }
+
 }

@@ -1,0 +1,10 @@
+@mixin flex ($flex,$content,$align){
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+@mixin flex2 ($flex,$content,$align){
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}

@@ -1,13 +1,14 @@
+@import'../base/mixin';
+
+
 .mayoristas-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include flex (center,center,baseline);
     text-align: left;
 
     @media screen and (max-width:750px) {
         flex-direction: column;
         align-items: center;
-        font-size: 1.5rem;
+  
         box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
         -webkit-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
         -moz-box-shadow: -16px 9px 5px -5px rgba(15, 14, 15, 0.75);
@@ -19,7 +20,6 @@
     .card-tres {
         width: 400px;
         height: 350px;
-        color: grey;
         margin: 50px;
         padding: 50px;
         text-align: left;
@@ -27,11 +27,17 @@
         -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
 
+        @media screen and (max-width:750px) {
+            width: 300px;
+            height: 250px;
+    
+        }
+
         &:hover {
-            box-shadow: -8px 14px 10px 0px rgba(84, 64, 64, 0.75);
+            box-shadow: -8px 14px 10px 0px rgba(139, 21, 21, 0.75);
             -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
             -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
-
+           
           
         }
 
@@ -40,20 +46,31 @@
 }
 .card-uno,.card-dos,.card-tres {
      .titulo-card {
-        text-align: center;
+        text-align: left;
         letter-spacing: 0.5rem;
-        color: black;
-        font-size: 2.5rem;
-        font-weight: bolder;
-
+        color: nth($colores, 4 );
+        font-size: nth($font-size, 4 );
+        font-weight: nth($font-weight, 4 );
+        @media screen and (max-width:750px) {
+          font-size: 2rem;
+          letter-spacing: normal;
+    
+        }
       
     }
 } 
 .mayoristas {
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.5rem;
-    color:black ;
+    color: nth($colores, 7 );
     font-size: 1.8rem;
-    font-weight: bolder;
+    font-weight: nth($font-weight, 4 );
+
+    
+    @media screen and (max-width:750px) {
+        font-size: 1.5rem;
+        letter-spacing: normal;
+  
+      }
 
 }

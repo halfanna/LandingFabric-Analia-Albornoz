@@ -1,39 +1,44 @@
+
+@import'../base/mixin';
+
 .footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #040403;
+@include flex2(flex,space-between,center);
+    background-color: nth($bg-color, 5 );
     margin-top: 50px;
     padding: 20px 20px;
-    color: #E8EAE6;
+    color: nth($colores, 6 );
     text-align: center;
     @media only screen and (max-width: 600px) {
         
         flex-direction: column;
         align-items: center;
-        background-color: rgb(14, 13, 13);
-        color: rgb(243, 214, 214);
+        background-color: nth($bg-color, 7 );
+        color: nth($colores, 3 );
         margin-top: 50px;
         padding: 20px 20px;
         }
     .info-redes a{
         text-decoration: none;
         list-style: none;
-        color: #a9896f;
-        font-size: 20px;
+        color: nth($colores, 7 );
+        
         &:hover{
-            color: rgba(240, 255, 255, 0.75);
+            color: nth($colores, 3 );
 
-        .btn-chat img{
-            position: fixed;
-            width: 55px;
-            height: 55px;
-            bottom: 33px;
-            right: 33px;
-            line-height: 55px;
-            z-index: 100;
+
+           
+
+       
             }
         }
     }
 
-}
+    .titulo-email{
+        font-size: nth($font-size, 3 );
+    }
+
+    .titulo-local{
+        font-size: nth($font-size, 3 );
+        font-weight: nth($font-weight, 3 );
+    }
+    

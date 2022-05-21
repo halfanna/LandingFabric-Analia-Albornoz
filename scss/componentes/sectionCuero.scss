@@ -13,6 +13,7 @@
     @media only screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;
+
        
 
       
@@ -28,27 +29,30 @@
     margin: 100px 50px;
     padding: 50px;
     text-align: center;
-    background-color: #0f0e0ec1;
+    background-color: nth($bg-color, 4 );
 
+    &:hover{
+        background-color: nth($bg-color, 2 );
+    }
      
     @media only screen and (max-width: 600px) {
-        background-color: #e8eae669;
-        width: 350px;
-        height: 300px;
+        background-color: nth($bg-color, 6 );
+        width: 300px;
+        height: 250px;
         
         }
 
     
 }
 .encabezado-cueros{
-     color: #E8EAE6;
+     color: nth($colores, 6);
      font-size: 3rem;
-     font-weight: 700;
+     font-weight: nth($font-weight, 3);
      font-family: 'Poppins', sans-serif;
      @media only screen and (max-width: 600px) {
-        color: black;
+        color: nth($colores, 1 );
         font-size: 2rem;
-        font-weight: bolder;
+        font-weight: nth($font-weight, 4 );
         
         
  
@@ -57,13 +61,17 @@
 }
 .parrafo-cueros{
     text-align: center;
-    font-weight: 500;
-    color: #ECDBBA;
+    font-weight: nth($font-weight, 2 );
+    color: nth($colores, 7 );
     font-size: 2rem;
+
+    &:hover{
+        color: nth($colores, 4 );
+    }
     @media only screen and (max-width: 600px) {
-        color: black;
-        font-size: 1.8rem;
-        font-weight: bolder;
+        color: nth($colores , 1 );
+        font-size: 1.5rem;
+        font-weight: nth($font-weight, 4 );
         
 }
 }
