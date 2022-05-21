@@ -271,9 +271,6 @@ html {
     height: 300px;
   }
 }
-.info-uno:hover, .info-dos:hover, .info-tres:hover {
-  background-color: black;
-}
 
 .encabezado-cueros {
   color: #E8EAE6;
