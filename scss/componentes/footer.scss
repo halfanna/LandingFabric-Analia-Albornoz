@@ -38,6 +38,11 @@
     .titulo-email{
         font-size: nth($font-size, 3 );
     }
+    .p-info{
+        color: nth($colores, 9 );
+        font-weight: nth($font-weight, 3 );
+        font-size: nth($font-size, 1 );
+    }
 
     .titulo-local{
         font-size: nth($font-size, 3 );
@@ -72,7 +77,12 @@
    .tel{
      position: fixed;
      bottom: 0;
-     
+
     
-    
-   }
+     @media only screen and (max-width: 750px) {
+        position: fixed;
+        left: 50px;
+        
+        
+        }
+    }

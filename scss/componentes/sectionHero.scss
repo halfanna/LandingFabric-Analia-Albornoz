@@ -40,9 +40,10 @@
 
 .subtitulo-nosotros {
     letter-spacing: 0.5rem;
-    color:nth($colores, 9 ); 
-    font-size: nth($font-size , 4 );
+    color:nth($colores, 7 ); 
+    font-size: nth($font-size , 5 );
     font-weight: nth($font-weight, 4 );
+    text-shadow: 2px ;
 
     
 }
@@ -51,7 +52,7 @@
     background-color: nth($bg-color, 8 );
     font-weight: nth($font-weight, 4);
     border-radius: 5px;
-    border: none;
+    border: 2px solid black;
     padding: 10px 5px;
     width: 100px;
 

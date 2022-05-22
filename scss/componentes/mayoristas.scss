@@ -30,13 +30,15 @@
         @media screen and (max-width:780px) {
            width: 350px;
            height: 300px;
+           background-color: nth($bg-color, 7 );
     
         }
         &:hover {
-            box-shadow: -8px 14px 10px 0px rgba(139, 21, 21, 0.75);
-            -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
-            -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
-           
+            box-shadow: -8px 14px 10px 0px rgba(80, 46, 46, 0.75);
+            -webkit-box-shadow: -8px 14px 10px 0px rgba(217, 203, 203, 0.75);
+            -moz-box-shadow: -8px 14px 10px 0px rgba(27, 21, 21, 0.75);
+          
+            
           
         }
 
@@ -47,9 +49,12 @@
      .titulo-card {
         text-align: center;
         color: nth($colores, 4 );
-        font-size: nth($font-size, 3);
+        font-size: nth($font-size, 4);
         font-weight: nth($font-weight, 4 );
      
+        @media screen and (max-width:780px) {
+            color: nth($colores, 3 );
+           }
       
     }
 } 
@@ -59,6 +64,8 @@
     font-size:nth($font-size, 3 );
     font-weight: nth($font-weight, 4 );
   
-   
+    @media screen and (max-width:780px) {
+      color: nth($colores, 3 );
+     }
 
 }

@@ -37,6 +37,7 @@
         color: nth($colores,1 );
         width: 400px;
         height: 350px;
+        background-color: nth($bg-color, 2 );
         }
     &:hover{
         background-color: nth($bg-color, 2 );
@@ -66,7 +67,7 @@
     @media only screen and (max-width:780px) {
         
         color: nth($colores,1 );
-        text-transform: uppercase;
+       
        
         }
   

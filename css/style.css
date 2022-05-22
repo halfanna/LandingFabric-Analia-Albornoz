@@ -113,9 +113,10 @@ html {
 
 .subtitulo-nosotros {
   letter-spacing: 0.5rem;
-  color: #EEEEEE;
-  font-size: 2.5rem;
+  color: #CC9C75;
+  font-size: 3rem;
   font-weight: bolder;
+  text-shadow: 2px;
 }
 
 .submit-style {
@@ -123,7 +124,7 @@ html {
   background-color: rgba(232, 234, 230, 0.4117647059);
   font-weight: bolder;
   border-radius: 5px;
-  border: none;
+  border: 2px solid black;
   padding: 10px 5px;
   width: 100px;
 }
@@ -166,21 +167,27 @@ html {
 .mayoristas-section .card-tres {
     width: 350px;
     height: 300px;
+    background-color: #0b0606;
   }
 }
 .mayoristas-section .card-uno:hover,
 .mayoristas-section .card-dos:hover,
 .mayoristas-section .card-tres:hover {
-  box-shadow: -8px 14px 10px 0px rgba(139, 21, 21, 0.75);
-  -webkit-box-shadow: -8px 14px 10px 0px rgba(100, 87, 87, 0.75);
-  -moz-box-shadow: -8px 14px 10px 0px rgba(230, 215, 215, 0.75);
+  box-shadow: -8px 14px 10px 0px rgba(80, 46, 46, 0.75);
+  -webkit-box-shadow: -8px 14px 10px 0px rgba(217, 203, 203, 0.75);
+  -moz-box-shadow: -8px 14px 10px 0px rgba(27, 21, 21, 0.75);
 }
 
 .card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
   text-align: center;
   color: #180A0A;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
+}
+@media screen and (max-width: 780px) {
+  .card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
+    color: #D0C9C0;
+  }
 }
 
 .mayoristas {
@@ -188,6 +195,11 @@ html {
   color: #CC9C75;
   font-size: 2rem;
   font-weight: bolder;
+}
+@media screen and (max-width: 780px) {
+  .mayoristas {
+    color: #D0C9C0;
+  }
 }
 
 .galeria-container {
@@ -275,6 +287,7 @@ html {
     color: #0b0606;
     width: 400px;
     height: 350px;
+    background-color: rgb(166, 137, 137);
   }
 }
 .info-uno:hover, .info-dos:hover, .info-tres:hover {
@@ -302,7 +315,6 @@ html {
 @media only screen and (max-width: 780px) {
   .parrafo-cueros {
     color: #0b0606;
-    text-transform: uppercase;
   }
 }
 
@@ -339,6 +351,12 @@ html {
   font-size: 2rem;
 }
 
+.p-info {
+  color: #EEEEEE;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 .titulo-local {
   font-size: 2rem;
   font-weight: 700;
@@ -371,6 +389,12 @@ html {
 .tel {
   position: fixed;
   bottom: 0;
+}
+@media only screen and (max-width: 750px) {
+  .tel {
+    position: fixed;
+    left: 50px;
+  }
 }
 
 .hero-img {
