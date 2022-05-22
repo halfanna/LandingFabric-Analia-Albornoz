@@ -247,6 +247,8 @@ html {
 @media only screen and (max-width: 600px) {
   .item-uno .titulo-item-uno {
     font-size: 2.5rem;
+    background-color: #0b0606;
+    color: #D0C9C0;
   }
 }
 .item-uno .titulo-item-uno:hover {
@@ -393,7 +395,7 @@ html {
 @media only screen and (max-width: 750px) {
   .tel {
     position: fixed;
-    left: 50px;
+    left: 20px;
   }
 }
 

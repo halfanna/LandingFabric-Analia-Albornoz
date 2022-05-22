@@ -65,7 +65,7 @@
     font-weight: nth($font-weight, 4 );
   
     @media screen and (max-width:780px) {
-      color: nth($colores, 3 );
-     }
-
+        color: nth($colores, 3 );
+       }
+  
 }

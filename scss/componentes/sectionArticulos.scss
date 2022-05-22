@@ -44,6 +44,8 @@
         font-weight: bolder;
         @media only screen and (max-width: 600px) {
             font-size: nth($font-size, 4 );
+            background-color:nth($bg-color, 7 );
+            color:nth($colores, 3 );  
         }
 
         &:hover{
