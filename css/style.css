@@ -344,8 +344,33 @@ html {
   font-weight: 700;
 }
 
-.form-style .titulo-form {
-  font-size: 2rem;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.formulario:hover {
+  color: #A25B5B;
+}
+.formulario button {
+  font-size: 1.8rem;
+  color: #0b0606;
+  background-color: #CC9C75;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  width: 100px;
+  cursor: pointer;
+}
+.formulario button:hover {
+  background-color: rgb(166, 137, 137);
+  color: #E8EAE6;
+}
+
+.tel {
+  position: fixed;
+  bottom: 0;
 }
 
 .hero-img {

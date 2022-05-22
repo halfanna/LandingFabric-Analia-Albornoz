@@ -17,6 +17,8 @@
         margin-top: 50px;
         padding: 20px 20px;
         }
+
+      
     .info-redes a{
         text-decoration: none;
         list-style: none;
@@ -41,9 +43,36 @@
         font-size: nth($font-size, 3 );
         font-weight: nth($font-weight, 3 );
     }
-    .form-style{
-
-        .titulo-form{
-            font-size: nth($font-size, 3 );
-        }
+   .formulario{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-size: nth($font-size, 1 );
+       font-weight: nth($font-weight,2 );
+       &:hover{
+        color: nth($colores, 5 );
+        
     }
+        button{
+            font-size: nth($font-size, 2 );
+            color:nth($colores , 1 );
+            background-color: nth($bg-color, 9 );
+            border-radius: 0.5rem;
+            font-weight: nth($font-weight, 3 );
+            width: 100px;
+            cursor: pointer;
+           &:hover{
+               background-color:nth($bg-color, 2 );
+               color: nth($colores, 6);
+           }
+        }
+     
+      
+   }
+   .tel{
+     position: fixed;
+     bottom: 0;
+     
+    
+    
+   }
