@@ -1,3 +1,7 @@
+@import'../base/listas';
+@import'../base/extends';
+
+
 .hero-img {
     @extend %flex;
     background-image: url(../imagenes/accesoriosdemoda1.webp);
@@ -40,8 +44,8 @@
 
 .subtitulo-nosotros {
     letter-spacing: 0.5rem;
-    color:nth($colores, 7 ); 
-    font-size: nth($font-size , 5 );
+    color:nth($colores, 6 ); 
+    font-size: nth($font-size , 3);
     font-weight: nth($font-weight, 4 );
     text-shadow: 2px ;
 

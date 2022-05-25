@@ -22,7 +22,7 @@
     .info-redes a{
         text-decoration: none;
         list-style: none;
-        color: nth($colores, 7 );
+        color: nth($colores, 5 );
         
         &:hover{
             color: nth($colores, 3 );
@@ -77,11 +77,7 @@
    .tel{
      position: fixed;
      bottom: 0;
-
+     left: 20px;
     
-     @media only screen and (max-width: 750px) {
-       position: fixed;
-       left: 20px;
-        
-        }
+
     }

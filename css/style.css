@@ -48,7 +48,7 @@ html {
 }
 @keyframes titulo {
   0% {
-    color: #EE5007;
+    color: #b42f98;
   }
   25% {
     color: #F900BF;
@@ -73,11 +73,18 @@ html {
 
 .nav-link {
   font-weight: 500;
-  color: #0b0606;
-  font-size: 1.8rem;
+  color: #A25B5B;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .nav-link:hover {
   color: #A25B5B;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-img {
@@ -115,8 +122,8 @@ html {
 
 .subtitulo-nosotros {
   letter-spacing: 0.5rem;
-  color: #CC9C75;
-  font-size: 3rem;
+  color: #E8EAE6;
+  font-size: 2rem;
   font-weight: bolder;
   text-shadow: 2px;
 }
@@ -194,7 +201,7 @@ html {
 
 .mayoristas {
   text-align: center;
-  color: #CC9C75;
+  color: #180A0A;
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -287,15 +294,10 @@ html {
 }
 @media only screen and (max-width: 780px) {
   .info-uno, .info-dos, .info-tres {
-    background-color: rgba(247, 205, 172, 0.504);
-    color: #0b0606;
+    background-color: rgb(166, 137, 137);
     width: 400px;
     height: 350px;
-    background-color: rgb(166, 137, 137);
   }
-}
-.info-uno:hover, .info-dos:hover, .info-tres:hover {
-  background-color: rgb(166, 137, 137);
 }
 
 .encabezado-cueros {
@@ -306,7 +308,7 @@ html {
 }
 @media only screen and (max-width: 780px) {
   .encabezado-cueros {
-    color: #0b0606;
+    color: #E8EAE6;
   }
 }
 
@@ -316,9 +318,12 @@ html {
   color: #D0C9C0;
   font-size: 2rem;
 }
+.parrafo-cueros:hover {
+  color: #A25B5B;
+}
 @media only screen and (max-width: 780px) {
   .parrafo-cueros {
-    color: #0b0606;
+    color: #E8EAE6;
   }
 }
 
@@ -345,7 +350,7 @@ html {
 .footer-container .info-redes a {
   text-decoration: none;
   list-style: none;
-  color: #CC9C75;
+  color: #A25B5B;
 }
 .footer-container .info-redes a:hover {
   color: #D0C9C0;
@@ -393,12 +398,7 @@ html {
 .tel {
   position: fixed;
   bottom: 0;
-}
-@media only screen and (max-width: 750px) {
-  .tel {
-    position: fixed;
-    left: 20px;
-  }
+  left: 20px;
 }
 
 .hero-img {
