@@ -1,83 +1,82 @@
-
 @import'../base/mixin';
 
-.footer-container{
-@include flex2(flex,space-between,center);
-    background-color: nth($bg-color, 5 );
+.footer-container {
+    @include flex2(flex, space-between, center);
+    background-color: nth($bg-color, 5);
     margin-top: 50px;
     padding: 20px 20px;
-    color: nth($colores, 6 );
+    color: nth($colores, 6);
     text-align: center;
+
     @media only screen and (max-width: 780px) {
-        
         flex-direction: column;
         align-items: center;
-        background-color: nth($bg-color, 7 );
-        color: nth($colores, 3 );
+        background-color: nth($bg-color, 7);
+        color: nth($colores, 3);
         margin-top: 50px;
         padding: 20px 20px;
-        }
-
-      
-    .info-redes a{
-        text-decoration: none;
-        list-style: none;
-        color: nth($colores, 5 );
-        
-        &:hover{
-            color: nth($colores, 3 );
+    }
 
 
-           
+    .info-redes {
+         a {
+            text-decoration: none;
+            list-style: none;
+            color: nth($colores, 5);
 
-       
+            &:hover {
+                color: nth($colores, 3);
+
             }
         }
+     }
     }
 
-    .titulo-email{
-        font-size: nth($font-size, 3 );
-    }
-    .p-info{
-        color: nth($colores, 9 );
-        font-weight: nth($font-weight, 3 );
-        font-size: nth($font-size, 1 );
+.titulo-email {
+    font-size: nth($font-size, 3);
+}
+
+.p-info {
+    color: nth($colores, 9);
+    font-weight: nth($font-weight, 3);
+    font-size: nth($font-size, 1);
+}
+
+.titulo-local {
+    font-size: nth($font-size, 3);
+    font-weight: nth($font-weight, 3);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: nth($font-size, 1);
+    font-weight: nth($font-weight, 2);
+
+    &:hover {
+        color: nth($colores, 5);
+
     }
 
-    .titulo-local{
-        font-size: nth($font-size, 3 );
-        font-weight: nth($font-weight, 3 );
-    }
-   .formulario{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       font-size: nth($font-size, 1 );
-       font-weight: nth($font-weight,2 );
-       &:hover{
-        color: nth($colores, 5 );
-        
-    }
-        button{
-            font-size: nth($font-size, 2 );
-            color:nth($colores , 1 );
-            background-color: nth($bg-color, 9 );
-            border-radius: 0.5rem;
-            font-weight: nth($font-weight, 3 );
-            width: 100px;
-            cursor: pointer;
-           &:hover{
-               background-color:nth($bg-color, 2 );
-               color: nth($colores, 6);
-           }
+    button {
+        font-size: nth($font-size, 2);
+        color: nth($colores, 1);
+        background-color: nth($bg-color, 9);
+        border-radius: 0.5rem;
+        font-weight: nth($font-weight, 3);
+        width: 100px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: nth($bg-color, 2);
+            color: nth($colores, 6);
         }
-     
-      
-   }
-   .tel{
-     position: fixed;
-     bottom: 0;
-     left: 20px;
-    
-
     }
+}
+
+.tel {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}

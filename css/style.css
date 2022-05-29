@@ -36,7 +36,7 @@ html {
   color: #D0C9C0;
   text-align: center;
   animation-name: titulo;
-  animation-duration: 30s;
+  animation-duration: 60s;
 }
 @media screen and (max-width: 600px) {
   .principal-cartel .titulo-cartel {
@@ -73,7 +73,7 @@ html {
 
 .nav-link {
   font-weight: 500;
-  color: #A25B5B;
+  color: #CC9C75;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -165,7 +165,6 @@ html {
   height: 350px;
   margin: 50px;
   padding: 50px;
-  text-align: left;
   box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
@@ -188,7 +187,8 @@ html {
 }
 
 .card-uno .titulo-card, .card-dos .titulo-card, .card-tres .titulo-card {
-  text-align: center;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
   color: #180A0A;
   font-size: 2.5rem;
   font-weight: bolder;
@@ -200,7 +200,8 @@ html {
 }
 
 .mayoristas {
-  text-align: center;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
   color: #180A0A;
   font-size: 2rem;
   font-weight: bolder;
@@ -284,16 +285,20 @@ html {
   }
 }
 
-.info-uno, .info-dos, .info-tres {
+.info-uno,
+.info-dos,
+.info-tres {
   width: 450px;
   height: 400px;
   margin: 100px 50px;
   padding: 50px;
-  text-align: center;
+  text-align: left;
   background-color: rgba(15, 14, 14, 0.7568627451);
 }
 @media only screen and (max-width: 780px) {
-  .info-uno, .info-dos, .info-tres {
+  .info-uno,
+.info-dos,
+.info-tres {
     background-color: rgb(166, 137, 137);
     width: 400px;
     height: 350px;
@@ -313,13 +318,10 @@ html {
 }
 
 .parrafo-cueros {
-  text-align: center;
+  text-align: left;
   font-weight: 600;
   color: #D0C9C0;
   font-size: 2rem;
-}
-.parrafo-cueros:hover {
-  color: #A25B5B;
 }
 @media only screen and (max-width: 780px) {
   .parrafo-cueros {
@@ -397,8 +399,8 @@ html {
 
 .tel {
   position: fixed;
-  bottom: 0;
-  left: 20px;
+  bottom: 10px;
+  right: 30px;
 }
 
 .hero-img {

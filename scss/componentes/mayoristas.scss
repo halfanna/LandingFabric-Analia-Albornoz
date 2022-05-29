@@ -23,7 +23,6 @@
         height: 350px;
         margin: 50px;
         padding: 50px;
-        text-align: left;
         box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -8px 14px 10px 0px rgba(0, 0, 0, 0.75);
@@ -37,9 +36,7 @@
             box-shadow: -8px 14px 10px 0px rgba(80, 46, 46, 0.75);
             -webkit-box-shadow: -8px 14px 10px 0px rgba(217, 203, 203, 0.75);
             -moz-box-shadow: -8px 14px 10px 0px rgba(27, 21, 21, 0.75);
-          
-            
-          
+             
         }
 
        
@@ -47,23 +44,26 @@
 }
 .card-uno,.card-dos,.card-tres {
      .titulo-card {
-        text-align: center;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
         color: nth($colores, 4 );
         font-size: nth($font-size, 4);
         font-weight: nth($font-weight, 4 );
-     
-        @media screen and (max-width:780px) {
+       
+     @media screen and (max-width:780px) {
             color: nth($colores, 3 );
            }
       
     }
 } 
 .mayoristas {
-    text-align: center;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
     color: nth($colores, 4 );
     font-size:nth($font-size, 3 );
     font-weight: nth($font-weight, 4 );
   
+   
     @media screen and (max-width:780px) {
         color: nth($colores, 3 );
        }

@@ -16,67 +16,48 @@
     @media only screen and (max-width:780px) {
         flex-direction: column;
         align-items: center;
-
-       
-
-      
-
     }
-    
-    
+
+
 }
-   
-    
-   
-.info-uno,.info-dos,.info-tres{
+.info-uno,
+.info-dos,
+.info-tres {
     width: 450px;
     height: 400px;
     margin: 100px 50px;
     padding: 50px;
-    text-align: center;
-    background-color: nth($bg-color, 4 );
-   
-        @media only screen and (max-width:780px) {
-            background-color: nth($bg-color, 2 );
-            width: 400px;
-            height: 350px;
-            
-            }
-       
+    text-align: left;
+    background-color: nth($bg-color, 4);
+
+    @media only screen and (max-width:780px) {
+        background-color: nth($bg-color, 2);
+        width: 400px;
+        height: 350px;
+
     }
-     
 
-   
-
-    
-
-.encabezado-cueros{
-     color: nth($colores, 6);
-     font-size: 3rem;
-     font-weight: nth($font-weight, 3);
-     font-family: 'Poppins', sans-serif;
-     @media only screen and (max-width:780px) {
-         color: nth($colores,6s );
-       
-        }
 }
-.parrafo-cueros{
-   
-    text-align: center;
-    font-weight: nth($font-weight, 2 );
-    color: nth($colores, 3 );
+
+.encabezado-cueros {
+    color: nth($colores, 6);
+    font-size: 3rem;
+    font-weight: nth($font-weight, 3);
+    font-family: 'Poppins', sans-serif;
+
+    @media only screen and (max-width:780px) {
+        color: nth($colores, 6s);
+
+    }
+}
+
+.parrafo-cueros {
+    text-align: left;
+    font-weight: nth($font-weight, 2);
+    color: nth($colores, 3);
     font-size: 2rem;
 
-    &:hover{
-        color: nth($colores, 5 );
-    }
     @media only screen and (max-width:780px) {
-        
-        color: nth($colores,6 );
-       
-       
-        }
-  
-        
-
+      color: nth($colores, 6);
+    }
 }
