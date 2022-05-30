@@ -3,7 +3,7 @@
 
 
 .mayoristas-section {
-  @include flex (center,center,center);
+  @include flex (flex,center,center);
     text-align: center;
 
     @media screen and (max-width:780px) {

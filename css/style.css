@@ -69,6 +69,7 @@ html {
   color: #0b0606;
   font-size: 4rem;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .nav-link {
@@ -399,8 +400,8 @@ html {
 
 .tel {
   position: fixed;
-  bottom: 10px;
-  right: 30px;
+  bottom: 0;
+  right: 150px;
 }
 
 .hero-img {
