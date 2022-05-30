@@ -79,4 +79,7 @@
     position: fixed;
     bottom: 0;
     right: 150px;
+    @media only screen and (max-width: 780px) {
+        right: 50px;
+    }
 }
