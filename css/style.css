@@ -82,6 +82,10 @@ html {
   color: #A25B5B;
 }
 
+.disclaimer {
+  display: none;
+}
+
 .hero-img {
   display: flex;
   justify-content: center;
